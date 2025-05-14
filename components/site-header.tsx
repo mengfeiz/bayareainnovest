@@ -25,8 +25,8 @@ export function SiteHeader() {
           <Link href="/portfolio" className="text-sm font-medium transition-colors hover:text-[#20b2bd]">
             Portfolio
           </Link>
-          <Link href="/fellows" className="text-sm font-medium transition-colors hover:text-[#20b2bd]">
-            Fellows
+          <Link href="/GloBAI" className="text-sm font-medium transition-colors hover:text-[#20b2bd]">
+            GloBAI
           </Link>
           <Link href="/blog" className="text-sm font-medium transition-colors hover:text-[#20b2bd]">
             Blog

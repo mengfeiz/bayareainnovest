@@ -123,7 +123,7 @@ export default function Home() {
               <Link href="/contact">Pitch Your Startup</Link>
             </Button>
             <Button asChild variant="outline" size="lg" className="border-white text-white hover:bg-white/10">
-              <Link href="/fellows">Join AI Club</Link>
+              <Link href="/GloBAI">Join AI Club</Link>
             </Button>
           </div>
         </div>

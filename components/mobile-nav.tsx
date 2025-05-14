@@ -28,8 +28,8 @@ export function MobileNav() {
           <Link href="/portfolio" className="block px-2 py-1 text-lg font-medium" onClick={() => setOpen(false)}>
             Portfolio
           </Link>
-          <Link href="/fellows" className="block px-2 py-1 text-lg font-medium" onClick={() => setOpen(false)}>
-            Fellows
+          <Link href="/GloBAI" className="block px-2 py-1 text-lg font-medium" onClick={() => setOpen(false)}>
+            GloBAI
           </Link>
           <Link href="/blog" className="block px-2 py-1 text-lg font-medium" onClick={() => setOpen(false)}>
             Blog
