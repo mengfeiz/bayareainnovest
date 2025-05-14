@@ -34,8 +34,8 @@ export function SiteHeader() {
         </nav>
 
         <div className="flex items-center gap-2">
-          <Link href="/for-lps" className="hidden md:block text-sm font-medium transition-colors hover:text-[#20b2bd]">
-            For LPs
+        <Link href="/contact" className="hidden md:block text-sm font-medium transition-colors hover:text-[#20b2bd]">
+            Contact Us
           </Link>
           <Button asChild className="bg-[#20b2bd] hover:bg-[#1f90bf]">
             <Link href="/join">Join Innovests</Link>

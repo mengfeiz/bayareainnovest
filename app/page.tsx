@@ -12,11 +12,10 @@ export default function Home() {
 
         <div className="container relative z-10 mx-auto text-center">
           <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl md:text-7xl lg:text-8xl">
-            AI Pioneers Investing in <br />
-            Next-Gen AI Startups
+            Empowering Cross-border Innovation and Growth.
           </h1>
           <p className="max-w-3xl mx-auto mt-6 text-xl text-white/90">
-            At Bay Area Innovest, top AI experts become partners to founders taking on audacious goals.
+          Bay Area Innovest (BAI) is a global platform for tech innovation and cross-border industrial investment, empowering enterprises through integrated incubation, capital, and industry services across AI, consumer products, healthtech, and global commerce.
           </p>
           <div className="flex flex-col items-center justify-center gap-4 mt-10 sm:flex-row">
             <Button asChild size="lg" className="bg-white text-[#20b2bd] hover:bg-white/90">
@@ -34,24 +33,24 @@ export default function Home() {
       {/* Core Offerings */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center text-gray-900 mb-16">Empowering Bay Area Talents</h2>
+          <h2 className="text-3xl font-bold text-center text-gray-900 mb-16">Core Services</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
               {
-                title: "Partnerships with Founders",
-                description: "We build meaningful partnerships with founders, providing more than just capital.",
+                title: "Industrial Investment",
+                description: "Joint industrial investment, M&A, and IPO support",
               },
               {
-                title: "Hands-On Mentorship",
-                description: "Our team of experts provides hands-on guidance to help navigate challenges.",
+                title: "Tech Innovation Acceleration",
+                description: "Identifying and accelerating early-stage tech projects centered in Silicon Valley",
               },
               {
-                title: "Deep AI Expertise",
-                description: "With backgrounds in AI research and development, we understand the technical landscape.",
+                title: "Family Office Services",
+                description: "Comprehensive services for entrepreneurs: academic research, wealth management, financial training, children’s education, tax & legal planning",
               },
               {
-                title: "Active Community",
+                title: "GloBAI Go Global",
                 description: "Join a thriving community of AI innovators, researchers, and entrepreneurs.",
               },
             ].map((offering, index) => (
@@ -66,6 +65,56 @@ export default function Home() {
                 <p className="text-gray-600">{offering.description}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+     {/* Industry Advantages - Minimalist Style */}
+     <section className="py-20 bg-gray-50 relative overflow-hidden">
+        <div className="absolute top-0 right-0 w-1/3 h-full bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSIjMjBiMmJkIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIG9wYWNpdHk9Ii4xIj48Y2lyY2xlIGN4PSIxIiBjeT0iMSIgcj0iMSIvPjxjaXJjbGUgY3g9IjIwIiBjeT0iMjAiIHI9IjEiLz48Y2lyY2xlIGN4PSI0MCIgY3k9IjQwIiByPSIxIi8+PGNpcmNsZSBjeD0iNjAiIGN5PSI2MCIgcj0iMSIvPjxjaXJjbGUgY3g9IjgwIiBjeT0iODAiIHI9IjEiLz48Y2lyY2xlIGN4PSIxMDAiIGN5PSIxMDAiIHI9IjEiLz48Y2lyY2xlIGN4PSIxMjAiIGN5PSIxMjAiIHI9IjEiLz48Y2lyY2xlIGN4PSIxNDAiIGN5PSIxNDAiIHI9IjEiLz48Y2lyY2xlIGN4PSIxNjAiIGN5PSIxNjAiIHI9IjEiLz48Y2lyY2xlIGN4PSIxODAiIGN5PSIxODAiIHI9IjEiLz48Y2lyY2xlIGN4PSIyMCIgY3k9IjEiIHI9IjEiLz48Y2lyY2xlIGN4PSI0MCIgY3k9IjIwIiByPSIxIi8+PGNpcmNsZSBjeD0iNjAiIGN5PSI0MCIgcj0iMSIvPjxjaXJjbGUgY3g9IjgwIiBjeT0iNjAiIHI9IjEiLz48Y2lyY2xlIGN4PSIxMDAiIGN5PSI4MCIgcj0iMSIvPjxjaXJjbGUgY3g9IjEyMCIgY3k9IjEwMCIgcj0iMSIvPjxjaXJjbGUgY3g9IjE0MCIgY3k9IjEyMCIgcj0iMSIvPjxjaXJjbGUgY3g9IjE2MCIgY3k9IjE0MCIgcj0iMSIvPjxjaXJjbGUgY3g9IjE4MCIgY3k9IjE2MCIgcj0iMSIvPjxjaXJjbGUgY3g9IjIwMCIgY3k9IjE4MCIgcj0iMSIvPjwvZz48L3N2Zz4=')] opacity-50" />
+
+        <div className="container mx-auto px-4 relative z-10">
+          <h2 className="text-3xl font-bold text-center text-gray-900 mb-16">Industry Advantages</h2>
+
+          <div className="flex flex-col md:flex-row justify-between items-start">
+            <div className="flex flex-col items-start border-l-2 border-gray-200 pl-6 py-2 mb-10 md:mb-0">
+              <span className="text-5xl font-bold text-gray-900 mb-2">Top 1</span>
+              <span className="text-gray-600">Merchant Operation Services</span>
+            </div>
+
+            <div className="flex flex-col items-start border-l-2 border-gray-200 pl-6 py-2 mb-10 md:mb-0">
+              <span className="text-5xl font-bold text-gray-900 mb-2">Top 1</span>
+              <span className="text-gray-600">Cross-Border E-commerce Logistics</span>
+            </div>
+
+            <div className="flex flex-col items-start border-l-2 border-gray-200 pl-6 py-2">
+              <span className="text-5xl font-bold text-gray-900 mb-2">24+</span>
+              <span className="text-gray-600">Premium & Trendy Brand Ecosystem</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Innovation & Investment Ecosystem - Minimalist Style */}
+      <section className="py-20 bg-white relative overflow-hidden">
+        <div className="container mx-auto px-4 relative z-10">
+          <h2 className="text-3xl font-bold text-center text-gray-900 mb-16">Innovation & Investment Ecosystem</h2>
+
+          <div className="flex flex-col md:flex-row justify-between items-start">
+            <div className="flex flex-col items-start border-l-2 border-gray-200 pl-6 py-2 mb-10 md:mb-0">
+              <span className="text-5xl font-bold text-gray-900 mb-2">40+</span>
+              <span className="text-gray-600">Domestic and International VC Funds</span>
+            </div>
+
+            <div className="flex flex-col items-start border-l-2 border-gray-200 pl-6 py-2 mb-10 md:mb-0">
+              <span className="text-5xl font-bold text-gray-900 mb-2">50+</span>
+              <span className="text-gray-600">Global University VC Organizations</span>
+            </div>
+
+            <div className="flex flex-col items-start border-l-2 border-gray-200 pl-6 py-2">
+              <span className="text-5xl font-bold text-gray-900 mb-2">20k+</span>
+              <span className="text-gray-600">Innovation Community Reach & Influence</span>
+            </div>
           </div>
         </div>
       </section>
