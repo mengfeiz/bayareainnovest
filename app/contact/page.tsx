@@ -106,9 +106,9 @@ export default function ContactPage() {
                 <h3 className="text-xl font-semibold mb-4">Visit Us</h3>
                 <p className="text-gray-600 mb-4">Our office is located in the heart of San Francisco.</p>
                 <p className="text-[#20b2bd]">
-                  123 Innovation Street
+                  Close to Stanford University
                   <br />
-                  San Francisco, CA 94105
+                  San Jose, CA
                 </p>
               </div>
 

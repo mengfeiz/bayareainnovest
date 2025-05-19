@@ -31,9 +31,6 @@ export function MobileNav() {
           <Link href="/GloBAI" className="block px-2 py-1 text-lg font-medium" onClick={() => setOpen(false)}>
             GloBAI
           </Link>
-          <Link href="/blog" className="block px-2 py-1 text-lg font-medium" onClick={() => setOpen(false)}>
-            Blog
-          </Link>
           <div className="mt-4">
             <Button asChild className="w-full bg-[#20b2bd] hover:bg-[#1f90bf]" onClick={() => setOpen(false)}>
               <Link href="/join">Join Innovests</Link>

@@ -23,7 +23,7 @@ export default function Home() {
                 Let's Talk <ArrowRight className="w-4 h-4 ml-2" />
               </Link>
             </Button>
-            <Button asChild variant="outline" size="lg" className="border-white text-white hover:bg-white/10">
+            <Button asChild variant="outline" size="lg" className="border-[#20b2bd] text-[#20b2bd] hover:bg-[#20b2bd]/10">
               <Link href="/portfolio">Explore Portfolio</Link>
             </Button>
           </div>
@@ -47,7 +47,7 @@ export default function Home() {
               },
               {
                 title: "Family Office Services",
-                description: "Comprehensive services for entrepreneurs: academic research, wealth management, financial training, children’s education, tax & legal planning",
+                description: "Comprehensive services for entrepreneurs: academic research, wealth management, financial training, children's education, tax & legal planning",
               },
               {
                 title: "GloBAI Go Global",
@@ -171,7 +171,7 @@ export default function Home() {
             <Button asChild size="lg" className="bg-white text-[#20b2bd] hover:bg-white/90">
               <Link href="/contact">Pitch Your Startup</Link>
             </Button>
-            <Button asChild variant="outline" size="lg" className="border-white text-white hover:bg-white/10">
+            <Button asChild variant="outline" size="lg" className="border-white text-[#20b2bd] hover:bg-white/10">
               <Link href="/GloBAI">Join AI Club</Link>
             </Button>
           </div>
