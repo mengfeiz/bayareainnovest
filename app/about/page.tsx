@@ -9,8 +9,7 @@ export default function AboutPage() {
         <div className="container mx-auto">
           <h1 className="text-4xl font-bold mb-6">Our Story</h1>
           <p className="text-xl max-w-3xl">
-            Founded in 2021, Bay Area Innovest is committed to empowering AI founders and being a transformative force
-            in the AI ecosystem.
+            BAI connects global Bay Area innovation and cross-border resources to empower tech innovation and brands to go global.
           </p>
         </div>
       </section>
@@ -21,8 +20,7 @@ export default function AboutPage() {
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-6">Our Mission</h2>
             <p className="text-xl text-gray-700 mb-8">
-              We are dedicated to being a transformative force in the AI ecosystem, supporting visionary founders who
-              are building the future.
+              To build a future-oriented global ecosystem by integrating capital, platforms, and brand strategy for high-quality international expansion.
             </p>
           </div>
         </div>

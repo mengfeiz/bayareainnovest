@@ -104,11 +104,11 @@ export default function ContactPage() {
 
               <div className="p-6 border border-gray-100 rounded-lg bg-white text-center">
                 <h3 className="text-xl font-semibold mb-4">Visit Us</h3>
-                <p className="text-gray-600 mb-4">Our office is located in the heart of San Francisco.</p>
+                <p className="text-gray-600 mb-4">Our office is located in the heart of San Jose.</p>
                 <p className="text-[#20b2bd]">
-                  123 Innovation Street
+                  Close to Stanford University
                   <br />
-                  San Francisco, CA 94105
+                  San Jose, CA
                 </p>
               </div>
 
@@ -117,10 +117,7 @@ export default function ContactPage() {
                 <p className="text-gray-600 mb-4">Stay updated with our latest news and events on social media.</p>
                 <div className="flex justify-center gap-4">
                   <a href="#" className="text-[#20b2bd] hover:text-[#1f90bf]">
-                    Twitter
-                  </a>
-                  <a href="#" className="text-[#20b2bd] hover:text-[#1f90bf]">
-                    LinkedIn
+                    www.bayareainnovest.com
                   </a>
                 </div>
               </div>
