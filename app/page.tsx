@@ -104,7 +104,7 @@ export default function Home() {
                   <li>• Global Market Expansion</li>
                 </ul>
                 <Button asChild variant="outline" className="border-white text-[#20b2bd] hover:bg-white/10">
-                  <Link href="/globai">Go Global</Link>
+                  <Link href="/GloBAI">Go Global</Link>
                 </Button>
               </div>
             </div>

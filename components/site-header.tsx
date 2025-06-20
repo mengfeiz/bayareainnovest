@@ -25,7 +25,7 @@ export function SiteHeader() {
           <Link href="/innovest" className="text-sm font-medium transition-colors hover:text-[#20b2bd]">
             BAI Fund
           </Link>
-          <Link href="/globai" className="text-sm font-medium transition-colors hover:text-[#20b2bd]">
+          <Link href="/GloBAI" className="text-sm font-medium transition-colors hover:text-[#20b2bd]">
             GloBAI
           </Link>
           <Link href="/ecommerce" className="text-sm font-medium transition-colors hover:text-[#20b2bd]">

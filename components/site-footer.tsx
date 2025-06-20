@@ -26,7 +26,7 @@ export function SiteFooter() {
                 </Link>
               </li>
               <li>
-                <Link href="/globai" className="text-gray-400 hover:text-white transition-colors">
+                <Link href="/GloBAI" className="text-gray-400 hover:text-white transition-colors">
                   GloBAI
                 </Link>
               </li>

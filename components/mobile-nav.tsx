@@ -28,7 +28,7 @@ export function MobileNav() {
           <Link href="/innovest" className="block px-2 py-1 text-lg font-medium" onClick={() => setOpen(false)}>
             BAI Fund
           </Link>
-          <Link href="/globai" className="block px-2 py-1 text-lg font-medium" onClick={() => setOpen(false)}>
+          <Link href="/GloBAI" className="block px-2 py-1 text-lg font-medium" onClick={() => setOpen(false)}>
             GloBAI
           </Link>
           <Link href="/ecommerce" className="block px-2 py-1 text-lg font-medium" onClick={() => setOpen(false)}>
