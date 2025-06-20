@@ -26,65 +26,20 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Team Introduction */}
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">Our Team</h2>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-white rounded-lg overflow-hidden shadow-sm">
-              <div className="h-64 bg-gray-200"></div>
-              <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">Kelly Qu</h3>
-                <p className="text-[#20b2bd] font-medium mb-4">Managing Partner</p>
-                <p className="text-gray-600">
-                  With over 15 years of experience in AI and venture capital, Kelly leads our investment strategy and
-                  founder relationships.
-                </p>
-              </div>
-            </div>
-
-            <div className="bg-white rounded-lg overflow-hidden shadow-sm">
-              <div className="h-64 bg-gray-200"></div>
-              <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">Michael Chen</h3>
-                <p className="text-[#20b2bd] font-medium mb-4">Technical Partner</p>
-                <p className="text-gray-600">
-                  Former AI researcher at Stanford, Michael brings deep technical expertise to evaluate and support our
-                  portfolio companies.
-                </p>
-              </div>
-            </div>
-
-            <div className="bg-white rounded-lg overflow-hidden shadow-sm">
-              <div className="h-64 bg-gray-200"></div>
-              <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">Sarah Johnson</h3>
-                <p className="text-[#20b2bd] font-medium mb-4">Operations Partner</p>
-                <p className="text-gray-600">
-                  With a background in scaling startups, Sarah helps our portfolio companies build efficient operations
-                  and go-to-market strategies.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Values */}
-      <section className="py-16 bg-white">
+        {/* Values */}
+        <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">Our Values</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="p-6 border border-gray-100 rounded-lg">
+            <div className="p-6 border border-gray-100 rounded-lg bg-white">
               <h3 className="text-xl font-semibold mb-4">Innovation First</h3>
               <p className="text-gray-600">
                 We believe in backing founders who are pushing the boundaries of what's possible with AI technology.
               </p>
             </div>
 
-            <div className="p-6 border border-gray-100 rounded-lg">
+            <div className="p-6 border border-gray-100 rounded-lg bg-white">
               <h3 className="text-xl font-semibold mb-4">Long-term Partnership</h3>
               <p className="text-gray-600">
                 We're committed to supporting our founders throughout their journey, not just during the initial
@@ -92,7 +47,7 @@ export default function AboutPage() {
               </p>
             </div>
 
-            <div className="p-6 border border-gray-100 rounded-lg">
+            <div className="p-6 border border-gray-100 rounded-lg bg-white">
               <h3 className="text-xl font-semibold mb-4">Diversity & Inclusion</h3>
               <p className="text-gray-600">
                 We actively seek out diverse founders and teams, believing that diverse perspectives lead to better
@@ -100,7 +55,7 @@ export default function AboutPage() {
               </p>
             </div>
 
-            <div className="p-6 border border-gray-100 rounded-lg">
+            <div className="p-6 border border-gray-100 rounded-lg bg-white">
               <h3 className="text-xl font-semibold mb-4">Ethical AI</h3>
               <p className="text-gray-600">
                 We support the responsible development and deployment of AI technologies that benefit humanity.
@@ -109,6 +64,7 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+
 
       {/* CTA */}
       <section className="py-16 bg-gradient-to-r from-[#1f90bf] to-[#5ccdb8] text-white">
