@@ -52,7 +52,7 @@ export default function Home() {
                 Get Started <ArrowRight className="w-4 h-4 ml-2" />
               </Link>
             </Button>
-            <Button asChild variant="outline" size="lg" className="border-white text-white hover:bg-white/10">
+            <Button asChild variant="outline" size="lg" className="border-white text-[#20b2bd] hover:bg-white/10">
               <Link href="/about">Learn More</Link>
             </Button>
           </div>
@@ -81,7 +81,7 @@ export default function Home() {
                   <li>• AI & Tech Incubation</li>
                   <li>• Full-Lifecycle Support</li>
                 </ul>
-                <Button asChild variant="outline" className="border-white text-white hover:bg-white/10">
+                <Button asChild variant="outline" className="border-white text-[#20b2bd] hover:bg-white/10">
                   <Link href="/innovest">Explore Fund</Link>
                 </Button>
               </div>
@@ -103,7 +103,7 @@ export default function Home() {
                   <li>• Cross-Border Logistics</li>
                   <li>• Global Market Expansion</li>
                 </ul>
-                <Button asChild variant="outline" className="border-white text-white hover:bg-white/10">
+                <Button asChild variant="outline" className="border-white text-[#20b2bd] hover:bg-white/10">
                   <Link href="/globai">Go Global</Link>
                 </Button>
               </div>
@@ -125,7 +125,7 @@ export default function Home() {
                   <li>• Personalized Shopping</li>
                   <li>• Exclusive Collections</li>
                 </ul>
-                <Button asChild variant="outline" className="border-white text-white hover:bg-white/10">
+                <Button asChild variant="outline" className="border-white text-[#20b2bd] hover:bg-white/10">
                   <Link href="/ecommerce">Shop Premium</Link>
                 </Button>
               </div>
@@ -237,7 +237,7 @@ export default function Home() {
             <Button asChild size="lg" className="bg-white text-[#20b2bd] hover:bg-white/90">
               <Link href="/contact">Get Started Today</Link>
             </Button>
-            <Button asChild variant="outline" size="lg" className="border-white text-white hover:bg-white/10">
+            <Button asChild variant="outline" size="lg" className="border-white text-[#20b2bd] hover:bg-white/10">
               <Link href="/about">Learn More About Us</Link>
             </Button>
           </div>

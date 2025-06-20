@@ -140,7 +140,7 @@ export default function ContactPage() {
             <Button asChild size="lg" className="bg-white text-[#20b2bd] hover:bg-white/90">
               <a href="#">Join AI Club</a>
             </Button>
-            <Button asChild variant="outline" size="lg" className="border-white text-white hover:bg-white/10">
+            <Button asChild variant="outline" size="lg" className="border-white text-[#20b2bd] hover:bg-white/10">
               <a href="#">LP Portal</a>
             </Button>
           </div>

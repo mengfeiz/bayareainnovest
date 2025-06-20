@@ -46,10 +46,10 @@ export function SiteFooter() {
           <div>
             <h3 className="text-lg font-semibold mb-4">Contact</h3>
             <ul className="space-y-2">
-              <li className="text-gray-400">San Francisco, CA</li>
+              <li className="text-gray-400">San Jose, CA</li>
               <li>
                 <a href="mailto:info@bayareaintl.com" className="text-gray-400 hover:text-white transition-colors">
-                  info@bayareaintl.com
+                  info@bayareainnovest.com
                 </a>
               </li>
               <li>

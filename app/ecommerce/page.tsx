@@ -164,7 +164,7 @@ export default function EcommercePage() {
             <Button asChild size="lg" className="bg-white text-[#20b2bd] hover:bg-white/90">
               <Link href="/contact">Join Waitlist</Link>
             </Button>
-            <Button asChild variant="outline" size="lg" className="border-white text-white hover:bg-white/10">
+            <Button asChild variant="outline" size="lg" className="border-white text-[#20b2bd] hover:bg-white/10">
               <Link href="/contact">Partner With Us</Link>
             </Button>
           </div>
