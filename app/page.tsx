@@ -62,7 +62,7 @@ export default function Home() {
       {/* Three Main Divisions */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center text-gray-900 mb-16">Our Three Strategic Divisions</h2>
+          <h2 className="text-3xl font-bold text-center text-gray-900 mb-16">Core Divisions</h2>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {/* Bay Area Innovest */}
@@ -134,52 +134,257 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Industry Advantages */}
-      <section className="py-20 bg-gray-50 relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-1/3 h-full bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSIjMjBiMmJkIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIG9wYWNpdHk9Ii4xIj48Y2lyY2xlIGN4PSIxIiBjeT0iMSIgcj0iMSIvPjxjaXJjbGUgY3g9IjIwIiBjeT0iMjAiIHI9IjEiLz48Y2lyY2xlIGN4PSI0MCIgY3k9IjQwIiByPSIxIi8+PGNpcmNsZSBjeD0iNjAiIGN5PSI2MCIgcj0iMSIvPjxjaXJjbGUgY3g9IjgwIiBjeT0iODAiIHI9IjEiLz48Y2lyY2xlIGN4PSIxMDAiIGN5PSIxMDAiIHI9IjEiLz48Y2lyY2xlIGN4PSIxMjAiIGN5PSIxMjAiIHI9IjEiLz48Y2lyY2xlIGN4PSIxNDAiIGN5PSIxNDAiIHI9IjEiLz48Y2lyY2xlIGN4PSIxNjAiIGN5PSIxNjAiIHI9IjEiLz48Y2lyY2xlIGN4PSIxODAiIGN5PSIxODAiIHI9IjEiLz48Y2lyY2xlIGN4PSIyMCIgY3k9IjEiIHI9IjEiLz48Y2lyY2xlIGN4PSI0MCIgY3k9IjIwIiByPSIxIi8+PGNpcmNsZSBjeD0iNjAiIGN5PSI0MCIgcj0iMSIvPjxjaXJjbGUgY3g9IjgwIiBjeT0iNjAiIHI9IjEiLz48Y2lyY2xlIGN4PSIxMDAiIGN5PSI4MCIgcj0iMSIvPjxjaXJjbGUgY3g9IjEyMCIgY3k9IjEwMCIgcj0iMSIvPjxjaXJjbGUgY3g9IjE0MCIgY3k9IjEyMCIgcj0iMSIvPjxjaXJjbGUgY3g9IjE2MCIgY3k9IjE0MCIgcj0iMSIvPjxjaXJjbGUgY3g9IjE4MCIgY3k9IjE2MCIgcj0iMSIvPjxjaXJjbGUgY3g9IjIwMCIgY3k9IjE4MCIgcj0iMSIvPjwvZz48L3N2Zz4=')] opacity-50" />
+    {/* Industry Advantages */}
+    <section className="py-20 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
+        {/* Background Pattern */}
+        <div className="absolute inset-0 opacity-5">
+          <div className="absolute top-10 left-10 w-32 h-32 bg-[#20b2bd] rounded-full blur-3xl"></div>
+          <div className="absolute bottom-20 right-20 w-40 h-40 bg-[#5ccdb8] rounded-full blur-3xl"></div>
+          <div className="absolute top-1/2 left-1/3 w-24 h-24 bg-[#1f90bf] rounded-full blur-2xl"></div>
+        </div>
 
         <div className="container mx-auto px-4 relative z-10">
-          <h2 className="text-3xl font-bold text-center text-gray-900 mb-16">Industry Advantages</h2>
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Industry Advantages</h2>
+            <div className="w-24 h-1 bg-gradient-to-r from-[#1f90bf] to-[#5ccdb8] mx-auto rounded-full"></div>
+          </div>
 
-          <div className="flex flex-col md:flex-row justify-between items-start">
-            <div className="flex flex-col items-start border-l-2 border-gray-200 pl-6 py-2 mb-10 md:mb-0">
-              <span className="text-5xl font-bold text-gray-900 mb-2">Top 1</span>
-              <span className="text-gray-600">Merchant Operation Services</span>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {/* Advantage 1 */}
+            <div className="group relative">
+              <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border border-gray-100">
+                <div className="absolute -top-6 left-8">
+                  <div className="w-12 h-12 bg-gradient-to-r from-[#1f90bf] to-[#20b2bd] rounded-xl flex items-center justify-center shadow-lg">
+                    <span className="text-white font-bold text-lg">1</span>
+                  </div>
+                </div>
+                <div className="pt-6">
+                  <div className="text-center mb-6">
+                    <div className="inline-flex items-baseline">
+                      <span className="text-5xl font-bold bg-gradient-to-r from-[#1f90bf] to-[#20b2bd] bg-clip-text text-transparent">
+                        Top
+                      </span>
+                      <span className="text-6xl font-bold bg-gradient-to-r from-[#20b2bd] to-[#5ccdb8] bg-clip-text text-transparent ml-2">
+                        1
+                      </span>
+                    </div>
+                  </div>
+                  <h3 className="text-xl font-semibold text-gray-900 mb-3 text-center">Merchant Operation Services</h3>
+                  <p className="text-gray-600 text-center leading-relaxed">
+                    Leading the industry in comprehensive merchant operations and cross-border commerce solutions
+                  </p>
+                </div>
+                {/* Decorative element */}
+                <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-[#1f90bf] to-[#20b2bd] rounded-b-2xl transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></div>
+              </div>
             </div>
 
-            <div className="flex flex-col items-start border-l-2 border-gray-200 pl-6 py-2 mb-10 md:mb-0">
-              <span className="text-5xl font-bold text-gray-900 mb-2">Top 1</span>
-              <span className="text-gray-600">Cross-Border E-commerce Logistics</span>
+            {/* Advantage 2 */}
+            <div className="group relative">
+              <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border border-gray-100">
+                <div className="absolute -top-6 left-8">
+                  <div className="w-12 h-12 bg-gradient-to-r from-[#20b2bd] to-[#5ccdb8] rounded-xl flex items-center justify-center shadow-lg">
+                    <span className="text-white font-bold text-lg">1</span>
+                  </div>
+                </div>
+                <div className="pt-6">
+                  <div className="text-center mb-6">
+                    <div className="inline-flex items-baseline">
+                      <span className="text-5xl font-bold bg-gradient-to-r from-[#20b2bd] to-[#5ccdb8] bg-clip-text text-transparent">
+                        Top
+                      </span>
+                      <span className="text-6xl font-bold bg-gradient-to-r from-[#5ccdb8] to-[#1f90bf] bg-clip-text text-transparent ml-2">
+                        1
+                      </span>
+                    </div>
+                  </div>
+                  <h3 className="text-xl font-semibold text-gray-900 mb-3 text-center">
+                    Cross-Border E-commerce Logistics
+                  </h3>
+                  <p className="text-gray-600 text-center leading-relaxed">
+                    Pioneering logistics solutions connecting global markets with seamless delivery networks
+                  </p>
+                </div>
+                <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-[#20b2bd] to-[#5ccdb8] rounded-b-2xl transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></div>
+              </div>
             </div>
 
-            <div className="flex flex-col items-start border-l-2 border-gray-200 pl-6 py-2">
-              <span className="text-5xl font-bold text-gray-900 mb-2">24+</span>
-              <span className="text-gray-600">Premium & Trendy Brand Ecosystem</span>
+            {/* Advantage 3 */}
+            <div className="group relative">
+              <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border border-gray-100">
+                <div className="absolute -top-6 left-8">
+                  <div className="w-12 h-12 bg-gradient-to-r from-[#5ccdb8] to-[#1f90bf] rounded-xl flex items-center justify-center shadow-lg">
+                    <span className="text-white font-bold text-lg">24</span>
+                  </div>
+                </div>
+                <div className="pt-6">
+                  <div className="text-center mb-6">
+                    <div className="inline-flex items-baseline">
+                      <span className="text-6xl font-bold bg-gradient-to-r from-[#5ccdb8] to-[#1f90bf] bg-clip-text text-transparent">
+                        24
+                      </span>
+                      <span className="text-4xl font-bold bg-gradient-to-r from-[#1f90bf] to-[#20b2bd] bg-clip-text text-transparent ml-1">
+                        +
+                      </span>
+                    </div>
+                  </div>
+                  <h3 className="text-xl font-semibold text-gray-900 mb-3 text-center">
+                    Premium & Trendy Brand Ecosystem
+                  </h3>
+                  <p className="text-gray-600 text-center leading-relaxed">
+                    Curated network of premium brands creating an exclusive marketplace ecosystem
+                  </p>
+                </div>
+                <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-[#5ccdb8] to-[#1f90bf] rounded-b-2xl transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Innovation & Investment Ecosystem */}
-      <section className="py-20 bg-white relative overflow-hidden">
+      <section className="py-20 bg-gradient-to-br from-white to-gray-50 relative overflow-hidden">
+        {/* Animated Background Elements */}
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-20 right-10 w-28 h-28 bg-[#1f90bf] rounded-full blur-2xl animate-pulse"></div>
+          <div
+            className="absolute bottom-32 left-16 w-36 h-36 bg-[#20b2bd] rounded-full blur-3xl animate-pulse"
+            style={{ animationDelay: "1s" }}
+          ></div>
+          <div
+            className="absolute top-1/3 right-1/3 w-20 h-20 bg-[#5ccdb8] rounded-full blur-xl animate-pulse"
+            style={{ animationDelay: "2s" }}
+          ></div>
+        </div>
+
         <div className="container mx-auto px-4 relative z-10">
-          <h2 className="text-3xl font-bold text-center text-gray-900 mb-16">Innovation & Investment Ecosystem</h2>
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Innovation & Investment Ecosystem</h2>
+            <div className="w-24 h-1 bg-gradient-to-r from-[#1f90bf] to-[#5ccdb8] mx-auto rounded-full"></div>
+            <p className="text-lg text-gray-600 mt-6 max-w-2xl mx-auto">
+              Building bridges across the global innovation landscape through strategic partnerships and community
+              engagement
+            </p>
+          </div>
 
-          <div className="flex flex-col md:flex-row justify-between items-start">
-            <div className="flex flex-col items-start border-l-2 border-gray-200 pl-6 py-2 mb-10 md:mb-0">
-              <span className="text-5xl font-bold text-gray-900 mb-2">40+</span>
-              <span className="text-gray-600">Domestic and International VC Funds</span>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {/* Ecosystem 1 */}
+            <div className="group relative">
+              <div className="bg-gradient-to-br from-white to-gray-50 rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 border-2 border-transparent hover:border-[#20b2bd]/20">
+                <div className="absolute -top-8 left-1/2 transform -translate-x-1/2">
+                  <div className="w-16 h-16 bg-gradient-to-br from-[#1f90bf] via-[#20b2bd] to-[#5ccdb8] rounded-2xl flex items-center justify-center shadow-xl rotate-12 group-hover:rotate-0 transition-transform duration-500">
+                    <span className="text-white font-bold text-xl">40</span>
+                  </div>
+                </div>
+                <div className="pt-8 text-center">
+                  <div className="mb-6">
+                    <div className="inline-flex items-baseline justify-center">
+                      <span className="text-6xl font-bold bg-gradient-to-r from-[#1f90bf] to-[#20b2bd] bg-clip-text text-transparent">
+                        40
+                      </span>
+                      <span className="text-4xl font-bold bg-gradient-to-r from-[#20b2bd] to-[#5ccdb8] bg-clip-text text-transparent ml-1">
+                        +
+                      </span>
+                    </div>
+                  </div>
+                  <h3 className="text-xl font-semibold text-gray-900 mb-4">Domestic and International VC Funds</h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    Strategic partnerships with leading venture capital funds across global markets
+                  </p>
+                </div>
+                {/* Animated border */}
+                <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-[#1f90bf] via-[#20b2bd] to-[#5ccdb8] opacity-0 group-hover:opacity-20 transition-opacity duration-500 -z-10 blur-xl"></div>
+              </div>
             </div>
 
-            <div className="flex flex-col items-start border-l-2 border-gray-200 pl-6 py-2 mb-10 md:mb-0">
-              <span className="text-5xl font-bold text-gray-900 mb-2">50+</span>
-              <span className="text-gray-600">Global University VC Organizations</span>
+            {/* Ecosystem 2 */}
+            <div className="group relative">
+              <div className="bg-gradient-to-br from-white to-gray-50 rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 border-2 border-transparent hover:border-[#20b2bd]/20">
+                <div className="absolute -top-8 left-1/2 transform -translate-x-1/2">
+                  <div className="w-16 h-16 bg-gradient-to-br from-[#20b2bd] via-[#5ccdb8] to-[#1f90bf] rounded-2xl flex items-center justify-center shadow-xl rotate-12 group-hover:rotate-0 transition-transform duration-500">
+                    <span className="text-white font-bold text-xl">50</span>
+                  </div>
+                </div>
+                <div className="pt-8 text-center">
+                  <div className="mb-6">
+                    <div className="inline-flex items-baseline justify-center">
+                      <span className="text-6xl font-bold bg-gradient-to-r from-[#20b2bd] to-[#5ccdb8] bg-clip-text text-transparent">
+                        50
+                      </span>
+                      <span className="text-4xl font-bold bg-gradient-to-r from-[#5ccdb8] to-[#1f90bf] bg-clip-text text-transparent ml-1">
+                        +
+                      </span>
+                    </div>
+                  </div>
+                  <h3 className="text-xl font-semibold text-gray-900 mb-4">Global University VC Organizations</h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    Academic partnerships fostering innovation and entrepreneurship in higher education
+                  </p>
+                </div>
+                <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-[#20b2bd] via-[#5ccdb8] to-[#1f90bf] opacity-0 group-hover:opacity-20 transition-opacity duration-500 -z-10 blur-xl"></div>
+              </div>
             </div>
 
-            <div className="flex flex-col items-start border-l-2 border-gray-200 pl-6 py-2">
-              <span className="text-5xl font-bold text-gray-900 mb-2">20k+</span>
-              <span className="text-gray-600">Innovation Community Reach & Influence</span>
+            {/* Ecosystem 3 */}
+            <div className="group relative">
+              <div className="bg-gradient-to-br from-white to-gray-50 rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 border-2 border-transparent hover:border-[#20b2bd]/20">
+                <div className="absolute -top-8 left-1/2 transform -translate-x-1/2">
+                  <div className="w-16 h-16 bg-gradient-to-br from-[#5ccdb8] via-[#1f90bf] to-[#20b2bd] rounded-2xl flex items-center justify-center shadow-xl rotate-12 group-hover:rotate-0 transition-transform duration-500">
+                    <span className="text-white font-bold text-lg">20k</span>
+                  </div>
+                </div>
+                <div className="pt-8 text-center">
+                  <div className="mb-6">
+                    <div className="inline-flex items-baseline justify-center">
+                      <span className="text-6xl font-bold bg-gradient-to-r from-[#5ccdb8] to-[#1f90bf] bg-clip-text text-transparent">
+                        20k
+                      </span>
+                      <span className="text-4xl font-bold bg-gradient-to-r from-[#1f90bf] to-[#20b2bd] bg-clip-text text-transparent ml-1">
+                        +
+                      </span>
+                    </div>
+                  </div>
+                  <h3 className="text-xl font-semibold text-gray-900 mb-4">Innovation Community Reach & Influence</h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    Extensive network connecting innovators, entrepreneurs, and industry leaders worldwide
+                  </p>
+                </div>
+                <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-[#5ccdb8] via-[#1f90bf] to-[#20b2bd] opacity-0 group-hover:opacity-20 transition-opacity duration-500 -z-10 blur-xl"></div>
+              </div>
             </div>
+          </div>
+
+          {/* Connection Lines - Decorative */}
+          <div className="hidden lg:block absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full max-w-4xl">
+            <svg className="w-full h-32 opacity-10" viewBox="0 0 800 200">
+              <path
+                d="M100 100 Q400 50 700 100"
+                stroke="url(#gradient1)"
+                strokeWidth="2"
+                fill="none"
+                className="animate-pulse"
+              />
+              <path
+                d="M100 100 Q400 150 700 100"
+                stroke="url(#gradient2)"
+                strokeWidth="2"
+                fill="none"
+                className="animate-pulse"
+                style={{ animationDelay: "1s" }}
+              />
+              <defs>
+                <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" stopColor="#1f90bf" />
+                  <stop offset="50%" stopColor="#20b2bd" />
+                  <stop offset="100%" stopColor="#5ccdb8" />
+                </linearGradient>
+                <linearGradient id="gradient2" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" stopColor="#5ccdb8" />
+                  <stop offset="50%" stopColor="#20b2bd" />
+                  <stop offset="100%" stopColor="#1f90bf" />
+                </linearGradient>
+              </defs>
+            </svg>
           </div>
         </div>
       </section>
