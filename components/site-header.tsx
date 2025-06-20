@@ -11,7 +11,7 @@ export function SiteHeader() {
             <div className="w-8 h-8 mr-2 bg-gradient-to-r from-[#1f90bf] to-[#5ccdb8] rounded-md flex items-center justify-center">
               <span className="text-white font-bold text-xs">BAI</span>
             </div>
-            <span className="text-xl font-bold">Bay Area International Group</span>
+            <span className="text-xl font-bold">Bay Area Innovest</span>
           </Link>
         </div>
 

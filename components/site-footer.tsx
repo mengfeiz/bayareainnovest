@@ -12,7 +12,7 @@ export function SiteFooter() {
               <div className="w-10 h-10 mr-2 bg-gradient-to-r from-[#1f90bf] to-[#5ccdb8] rounded-md flex items-center justify-center">
                 <span className="text-white font-bold text-xs">BAI</span>
               </div>
-              <span className="text-xl font-bold">Bay Area International Group</span>
+              <span className="text-xl font-bold">Bay Area Innovest</span>
             </Link>
             <p className="mt-4 text-gray-400">Bridging Innovation, Investment, and Global Commerce since 2021.</p>
           </div>
@@ -71,7 +71,7 @@ export function SiteFooter() {
         </div>
 
         <div className="mt-12 pt-8 border-t border-gray-800 text-center text-gray-400">
-          <p>© {new Date().getFullYear()} Bay Area International Group. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Bay Area Innovest. All rights reserved.</p>
         </div>
       </div>
     </footer>

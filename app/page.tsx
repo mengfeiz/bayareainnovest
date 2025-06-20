@@ -12,7 +12,7 @@ export default function Home() {
 
         <div className="container relative z-10 mx-auto text-center">
           <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl md:text-7xl lg:text-8xl">
-            Bay Area International Group
+            Bay Area Innovest
           </h1>
           <p className="max-w-3xl mx-auto mt-6 text-xl text-white/90">
             Bridging Innovation, Investment, and Global Commerce Through Three Strategic Platforms
@@ -393,7 +393,7 @@ export default function Home() {
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center text-gray-900 mb-16">
-            Why Choose Bay Area International Group
+            Why Choose Bay Area Innovest
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
