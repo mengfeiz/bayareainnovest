@@ -254,7 +254,7 @@ export default function GloBAIPage() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-6">Ready to Go Global?</h2>
           <p className="text-xl max-w-2xl mx-auto mb-8">
-            Take your brand to international markets with our comprehensive cross-border growth solutions
+            Take your brand to international markets with our comprehensive cross-border growth solutions.
           </p>
           <Button asChild size="lg" className="bg-white text-[#20b2bd] hover:bg-white/90">
             <Link href="/contact">Contact Us Today</Link>
