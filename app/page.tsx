@@ -15,7 +15,9 @@ export default function Home() {
             Bay Area Innovest
           </h1>
           <p className="max-w-3xl mx-auto mt-6 text-xl text-white/90">
-            Bridging Innovation, Investment, and Global Commerce Through Three Strategic Platforms
+          Bay Area Innovest is a global catalyst for next-gen innovation, empowering visionary founders in AI, e-commerce, logistics, consumer tech, and life sciences to build brands that shape the future.
+
+
           </p>
 
           {/* Global Locations */}
@@ -73,8 +75,7 @@ export default function Home() {
               <div className="relative z-10">
                 <h3 className="text-2xl font-bold mb-4">Bay Area Innovest</h3>
                 <p className="text-white/90 mb-6">
-                  Managing the BAI Fund, we invest in transformative AI and tech startups at pre-seed and seed stages,
-                  empowering the next generation of global tech leaders.
+                BAI Fund is an early-stage venture platform investing in transformative startups across AI, e-commerce, life sciences, and consumer tech. Backed by leading corporates and incubators, we bridge innovation and industry, accelerating founders from idea to IPO through strategic capital, deep networks, and global scale.
                 </p>
                 <ul className="space-y-2 mb-6 text-sm text-white/80">
                   <li>• Strategic Industrial Investment</li>
@@ -95,8 +96,8 @@ export default function Home() {
               <div className="relative z-10">
                 <h3 className="text-2xl font-bold mb-4">GloBAI</h3>
                 <p className="text-white/90 mb-6">
-                  One-stop cross-border growth platform empowering Chinese brands to scale globally through end-to-end
-                  infrastructure and localization services.
+                  One-stop cross-border growth platform empowering brands to scale globally through end-to-end
+                   services.
                 </p>
                 <ul className="space-y-2 mb-6 text-sm text-white/80">
                   <li>• Supply Chain Integration</li>
@@ -169,7 +170,7 @@ export default function Home() {
                       </span>
                     </div>
                   </div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-3 text-center">Merchant Operation Services</h3>
+                  <h3 className="text-xl font-semibold text-gray-900 mb-3 text-center">Amazon Operation Services</h3>
                   <p className="text-gray-600 text-center leading-relaxed">
                     Leading the industry in comprehensive merchant operations and cross-border commerce solutions
                   </p>
@@ -400,7 +401,7 @@ export default function Home() {
             {[
               {
                 title: "Global Expertise",
-                description: "Deep understanding of both Eastern and Western markets with local expertise worldwide.",
+                description: "Leveraging cross-border supply chain networks and brand marketing strength to accelerate global growth and build lasting market presence.",
               },
               {
                 title: "Integrated Ecosystem",

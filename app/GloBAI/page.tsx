@@ -31,7 +31,7 @@ export default function GloBAIPage() {
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl font-bold mb-6">Go Global with Confidence</h2>
             <p className="text-lg text-gray-700 mb-6">
-              At GloBAI, we empower Chinese brands to scale globally through an end-to-end cross-border infrastructure.
+              At GloBAI, we empower brands to scale globally through an end-to-end cross-border infrastructure.
               From supply chain integration to last-mile delivery and brand localization, we help you Go Global with
               Confidence.
             </p>

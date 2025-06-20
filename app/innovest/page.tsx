@@ -123,8 +123,7 @@ export default function InnovestPage() {
         <div className="container mx-auto">
           <h1 className="text-4xl font-bold mb-6">Bay Area Innovest</h1>
           <p className="text-xl max-w-3xl">
-            Managing the BAI Fund, we invest in transformative AI and tech startups at pre-seed and seed stages,
-            empowering the next generation of global tech leaders.
+            BAI Fund is an early-stage venture platform investing in transformative startups across AI, e-commerce, life sciences, and consumer tech. Backed by leading corporates and incubators, we bridge innovation and industry, accelerating founders from idea to IPO through strategic capital, deep networks, and global scale.
           </p>
         </div>
       </section>
