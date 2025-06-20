@@ -1,70 +1,60 @@
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import { Clock } from "lucide-react"
 
 export default function InnovestPage() {
   // Portfolio company data organized by category
   const portfolioData = {
+    ecommerce: [
+      {
+        name: "Shenzhen Winlink Express Logistics Co., Ltd.",
+        description:
+          "A leading cross-border supply chain service provider in China, delivering comprehensive logistics solutions tailored for global e-commerce platforms.",
+        tags: ["Cross-Border Logistics", "Supply Chain"],
+        image: "winlink-logistics",
+      },
+      {
+        name: "Uni-Frozen Group (Youxin Songfeng)",
+        description:
+          "A one-stop cold chain logistics company recognized as a market leader in the specialized field of temperature-controlled supply chain services.",
+        tags: ["Cold Chain", "Logistics"],
+        image: "uni-frozen",
+      },
+    ],
     ai: [
+      // AI section will show "coming soon" placeholder
+    ],
+    health: [
       {
-        name: "NeuralSense",
-        description: "Building next-generation AI tools for enterprise productivity and decision-making.",
-        tags: ["Enterprise AI", "Seed"],
-        image: "ai-company-1",
+        name: "Tus Medical & Health",
+        description:
+          "China's first operator of county-level medical community service systems, advancing regional healthcare integration and operational efficiency.",
+        tags: ["Healthcare Systems", "Medical Services"],
+        image: "tus-medical",
       },
       {
-        name: "DeepLearn.io",
-        description: "Democratizing machine learning with intuitive no-code platforms for businesses.",
-        tags: ["ML Tools", "Series A"],
-        image: "ai-company-2",
+        name: "Langgu Biotech",
+        description:
+          "Focused on the development and commercialization of neoantigen-based immunotherapies for cancer, with operations across China, the U.S., and Japan.",
+        tags: ["Immunotherapy", "Biotech"],
+        image: "langgu-biotech",
       },
       {
-        name: "Cognify",
-        description: "Developing advanced natural language processing solutions for customer service automation.",
-        tags: ["NLP", "Seed"],
-        image: "ai-company-3",
+        name: "Haiyun Yijian HealthTech Co., Ltd.",
+        description:
+          "A pioneer in integrated modern sanitation and disinfection technologies. The company combines research in infectious disease prevention with advanced disinfection solutions—ranging from chemical and biological disinfectants to nanotech and photocatalytic systems.",
+        tags: ["HealthTech", "Disinfection Systems"],
+        image: "haiyun-yijian",
       },
     ],
     consumer: [
       {
-        name: "MetaVerse Labs",
-        description: "Creating immersive AR/VR experiences for next-generation consumer engagement.",
-        tags: ["AR/VR", "Seed"],
-        image: "consumer-company-1",
-      },
-      {
-        name: "SmartHome Hub",
-        description: "Unifying connected home devices with intuitive control systems and automation.",
-        tags: ["IoT", "Series A"],
-        image: "consumer-company-2",
-      },
-    ],
-    health: [
-      {
-        name: "GenomicAI",
-        description: "Revolutionizing healthcare diagnostics with advanced machine learning and genomic analysis.",
-        tags: ["Healthcare", "Series A"],
-        image: "health-company-1",
-      },
-      {
-        name: "MedTech Solutions",
-        description: "Developing wearable health monitoring devices with predictive analytics capabilities.",
-        tags: ["MedTech", "Seed"],
-        image: "health-company-2",
-      },
-    ],
-    ecommerce: [
-      {
-        name: "GlobalShip",
-        description: "Optimizing cross-border logistics with AI-powered routing and customs clearance.",
-        tags: ["Logistics", "Series A"],
-        image: "ecommerce-company-1",
-      },
-      {
-        name: "RetailAI",
-        description: "Enhancing e-commerce personalization through behavioral analysis and predictive modeling.",
-        tags: ["E-commerce", "Seed"],
-        image: "ecommerce-company-2",
+        name: "Produce Sunshine (Tianjin)",
+        description:
+          "Founded in 1992, Produce Sunshine specializes in high-quality nuts, dried fruits, and organic agricultural products. Serving global baking and snack food brands, the company is known for its product quality, innovation, and export-ready capabilities.",
+        tags: ["Food & Agriculture", "Consumer Products"],
+        image: "produce-sunshine",
       },
     ],
   }
@@ -74,7 +64,7 @@ export default function InnovestPage() {
     return companies.map((company, index) => (
       <div key={index} className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
         <div className="h-48 bg-gradient-to-r from-[#1f90bf] to-[#5ccdb8] flex items-center justify-center">
-          <span className="text-white text-xl font-bold">{company.name}</span>
+          <span className="text-white text-xl font-bold text-center px-4">{company.name}</span>
         </div>
         <div className="p-6">
           <h3 className="text-xl font-semibold mb-2">{company.name}</h3>
@@ -92,6 +82,38 @@ export default function InnovestPage() {
         </div>
       </div>
     ))
+  }
+
+  // Function to render "coming soon" placeholder for AI
+  const renderComingSoonCard = () => {
+    return (
+      <div className="bg-white rounded-lg overflow-hidden shadow-sm relative">
+        <div className="h-48 bg-gradient-to-r from-[#1f90bf] to-[#5ccdb8] flex items-center justify-center relative">
+          <span className="text-white text-xl font-bold">AI Investments</span>
+          {/* Coming Soon Overlay */}
+          <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
+            <div className="bg-white rounded-full px-4 py-2 flex items-center gap-2">
+              <Clock className="h-4 w-4 text-gray-600" />
+              <span className="text-gray-800 font-medium">Coming Soon</span>
+            </div>
+          </div>
+        </div>
+        <div className="p-6">
+          <h3 className="text-xl font-semibold mb-2">AI Portfolio Companies</h3>
+          <p className="text-gray-600 mb-4">
+            We are actively evaluating and investing in cutting-edge AI companies. Our AI portfolio will be announced
+            soon.
+          </p>
+          <div className="flex flex-wrap gap-2 mb-4">
+            <span className="px-2 py-1 bg-gray-100 text-gray-800 text-xs rounded-full">Artificial Intelligence</span>
+            <span className="px-2 py-1 bg-gray-100 text-gray-800 text-xs rounded-full">Machine Learning</span>
+          </div>
+          <Button variant="outline" disabled className="text-gray-400 border-gray-300 cursor-not-allowed">
+            Coming Soon
+          </Button>
+        </div>
+      </div>
+    )
   }
 
   return (
@@ -144,25 +166,25 @@ export default function InnovestPage() {
                     <div className="h-6 w-6 rounded-full bg-gradient-to-r from-[#1f90bf] to-[#5ccdb8] flex items-center justify-center mr-3 mt-0.5">
                       <span className="text-white text-xs">1</span>
                     </div>
-                    <span className="text-gray-700">Artificial Intelligence (AI)</span>
+                    <span className="text-gray-700">E-commerce and Logistics</span>
                   </li>
                   <li className="flex items-start">
                     <div className="h-6 w-6 rounded-full bg-gradient-to-r from-[#1f90bf] to-[#5ccdb8] flex items-center justify-center mr-3 mt-0.5">
                       <span className="text-white text-xs">2</span>
                     </div>
-                    <span className="text-gray-700">New Consumer Technologies</span>
+                    <span className="text-gray-700">Artificial Intelligence (AI)</span>
                   </li>
                   <li className="flex items-start">
                     <div className="h-6 w-6 rounded-full bg-gradient-to-r from-[#1f90bf] to-[#5ccdb8] flex items-center justify-center mr-3 mt-0.5">
                       <span className="text-white text-xs">3</span>
                     </div>
-                    <span className="text-gray-700">Life and Health Sciences</span>
+                    <span className="text-gray-700">Life Sciences</span>
                   </li>
                   <li className="flex items-start">
                     <div className="h-6 w-6 rounded-full bg-gradient-to-r from-[#1f90bf] to-[#5ccdb8] flex items-center justify-center mr-3 mt-0.5">
                       <span className="text-white text-xs">4</span>
                     </div>
-                    <span className="text-gray-700">E-commerce and Global Logistics</span>
+                    <span className="text-gray-700">Consumer Tech</span>
                   </li>
                 </ul>
               </div>
@@ -187,35 +209,59 @@ export default function InnovestPage() {
               <TabsTrigger value="all" className="data-[state=active]:bg-[#20b2bd] data-[state=active]:text-white">
                 All Companies
               </TabsTrigger>
-              <TabsTrigger value="ai" className="data-[state=active]:bg-[#20b2bd] data-[state=active]:text-white">
-                AI
-              </TabsTrigger>
-              <TabsTrigger value="consumer" className="data-[state=active]:bg-[#20b2bd] data-[state=active]:text-white">
-                Consumer Tech
-              </TabsTrigger>
-              <TabsTrigger value="health" className="data-[state=active]:bg-[#20b2bd] data-[state=active]:text-white">
-                Health Sciences
-              </TabsTrigger>
               <TabsTrigger
                 value="ecommerce"
                 className="data-[state=active]:bg-[#20b2bd] data-[state=active]:text-white"
               >
                 E-commerce & Logistics
               </TabsTrigger>
+              <TabsTrigger value="ai" className="data-[state=active]:bg-[#20b2bd] data-[state=active]:text-white">
+                AI
+              </TabsTrigger>
+              <TabsTrigger value="health" className="data-[state=active]:bg-[#20b2bd] data-[state=active]:text-white">
+                Life Sciences
+              </TabsTrigger>
+              <TabsTrigger value="consumer" className="data-[state=active]:bg-[#20b2bd] data-[state=active]:text-white">
+                Consumer Tech
+              </TabsTrigger>
             </TabsList>
 
             <TabsContent value="all">
               <div className="space-y-16">
-                {/* AI Section */}
+                {/* E-commerce & Logistics Section */}
                 <div>
                   <h3 className="text-2xl font-semibold mb-6 flex items-center">
                     <div className="h-8 w-8 rounded-full bg-gradient-to-r from-[#1f90bf] to-[#5ccdb8] flex items-center justify-center mr-3">
-                      <span className="text-white font-bold">1</span>
+                      <span className="text-white font-bold">📦</span>
+                    </div>
+                    E-commerce & Logistics
+                  </h3>
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    {renderCompanyCards(portfolioData.ecommerce)}
+                  </div>
+                </div>
+
+                {/* AI Section - Coming Soon */}
+                <div>
+                  <h3 className="text-2xl font-semibold mb-6 flex items-center">
+                    <div className="h-8 w-8 rounded-full bg-gradient-to-r from-[#1f90bf] to-[#5ccdb8] flex items-center justify-center mr-3">
+                      <span className="text-white font-bold">🤖</span>
                     </div>
                     Artificial Intelligence (AI)
                   </h3>
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">{renderComingSoonCard()}</div>
+                </div>
+
+                {/* Life Sciences Section */}
+                <div>
+                  <h3 className="text-2xl font-semibold mb-6 flex items-center">
+                    <div className="h-8 w-8 rounded-full bg-gradient-to-r from-[#1f90bf] to-[#5ccdb8] flex items-center justify-center mr-3">
+                      <span className="text-white font-bold">🧬</span>
+                    </div>
+                    Life Sciences
+                  </h3>
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {renderCompanyCards(portfolioData.ai)}
+                    {renderCompanyCards(portfolioData.health)}
                   </div>
                 </div>
 
@@ -223,81 +269,13 @@ export default function InnovestPage() {
                 <div>
                   <h3 className="text-2xl font-semibold mb-6 flex items-center">
                     <div className="h-8 w-8 rounded-full bg-gradient-to-r from-[#1f90bf] to-[#5ccdb8] flex items-center justify-center mr-3">
-                      <span className="text-white font-bold">2</span>
+                      <span className="text-white font-bold">🛒</span>
                     </div>
-                    New Consumer Technologies
+                    Consumer Tech
                   </h3>
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {renderCompanyCards(portfolioData.consumer)}
                   </div>
-                </div>
-
-                {/* Health Sciences Section */}
-                <div>
-                  <h3 className="text-2xl font-semibold mb-6 flex items-center">
-                    <div className="h-8 w-8 rounded-full bg-gradient-to-r from-[#1f90bf] to-[#5ccdb8] flex items-center justify-center mr-3">
-                      <span className="text-white font-bold">3</span>
-                    </div>
-                    Life and Health Sciences
-                  </h3>
-                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {renderCompanyCards(portfolioData.health)}
-                  </div>
-                </div>
-
-                {/* E-commerce Section */}
-                <div>
-                  <h3 className="text-2xl font-semibold mb-6 flex items-center">
-                    <div className="h-8 w-8 rounded-full bg-gradient-to-r from-[#1f90bf] to-[#5ccdb8] flex items-center justify-center mr-3">
-                      <span className="text-white font-bold">4</span>
-                    </div>
-                    E-commerce and Global Logistics
-                  </h3>
-                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {renderCompanyCards(portfolioData.ecommerce)}
-                  </div>
-                </div>
-              </div>
-            </TabsContent>
-
-            <TabsContent value="ai">
-              <div>
-                <h3 className="text-2xl font-semibold mb-6 flex items-center">
-                  <div className="h-8 w-8 rounded-full bg-gradient-to-r from-[#1f90bf] to-[#5ccdb8] flex items-center justify-center mr-3">
-                    <span className="text-white font-bold">1</span>
-                  </div>
-                  Artificial Intelligence (AI)
-                </h3>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                  {renderCompanyCards(portfolioData.ai)}
-                </div>
-              </div>
-            </TabsContent>
-
-            <TabsContent value="consumer">
-              <div>
-                <h3 className="text-2xl font-semibold mb-6 flex items-center">
-                  <div className="h-8 w-8 rounded-full bg-gradient-to-r from-[#1f90bf] to-[#5ccdb8] flex items-center justify-center mr-3">
-                    <span className="text-white font-bold">2</span>
-                  </div>
-                  New Consumer Technologies
-                </h3>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                  {renderCompanyCards(portfolioData.consumer)}
-                </div>
-              </div>
-            </TabsContent>
-
-            <TabsContent value="health">
-              <div>
-                <h3 className="text-2xl font-semibold mb-6 flex items-center">
-                  <div className="h-8 w-8 rounded-full bg-gradient-to-r from-[#1f90bf] to-[#5ccdb8] flex items-center justify-center mr-3">
-                    <span className="text-white font-bold">3</span>
-                  </div>
-                  Life and Health Sciences
-                </h3>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                  {renderCompanyCards(portfolioData.health)}
                 </div>
               </div>
             </TabsContent>
@@ -306,12 +284,52 @@ export default function InnovestPage() {
               <div>
                 <h3 className="text-2xl font-semibold mb-6 flex items-center">
                   <div className="h-8 w-8 rounded-full bg-gradient-to-r from-[#1f90bf] to-[#5ccdb8] flex items-center justify-center mr-3">
-                    <span className="text-white font-bold">4</span>
+                    <span className="text-white font-bold">📦</span>
                   </div>
-                  E-commerce and Global Logistics
+                  E-commerce & Logistics
                 </h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                   {renderCompanyCards(portfolioData.ecommerce)}
+                </div>
+              </div>
+            </TabsContent>
+
+            <TabsContent value="ai">
+              <div>
+                <h3 className="text-2xl font-semibold mb-6 flex items-center">
+                  <div className="h-8 w-8 rounded-full bg-gradient-to-r from-[#1f90bf] to-[#5ccdb8] flex items-center justify-center mr-3">
+                    <span className="text-white font-bold">🤖</span>
+                  </div>
+                  Artificial Intelligence (AI)
+                </h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">{renderComingSoonCard()}</div>
+              </div>
+            </TabsContent>
+
+            <TabsContent value="health">
+              <div>
+                <h3 className="text-2xl font-semibold mb-6 flex items-center">
+                  <div className="h-8 w-8 rounded-full bg-gradient-to-r from-[#1f90bf] to-[#5ccdb8] flex items-center justify-center mr-3">
+                    <span className="text-white font-bold">🧬</span>
+                  </div>
+                  Life Sciences
+                </h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                  {renderCompanyCards(portfolioData.health)}
+                </div>
+              </div>
+            </TabsContent>
+
+            <TabsContent value="consumer">
+              <div>
+                <h3 className="text-2xl font-semibold mb-6 flex items-center">
+                  <div className="h-8 w-8 rounded-full bg-gradient-to-r from-[#1f90bf] to-[#5ccdb8] flex items-center justify-center mr-3">
+                    <span className="text-white font-bold">🛒</span>
+                  </div>
+                  Consumer Tech
+                </h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                  {renderCompanyCards(portfolioData.consumer)}
                 </div>
               </div>
             </TabsContent>
