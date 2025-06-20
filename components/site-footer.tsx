@@ -14,7 +14,7 @@ export function SiteFooter() {
               </div>
               <span className="text-xl font-bold">Bay Area Innovest</span>
             </Link>
-            <p className="mt-4 text-gray-400">Bridging Innovation, Investment, and Global Commerce since 2021.</p>
+            <p className="mt-4 text-gray-400">Global catalyst for next-gen innovation, empowering visionary founders in AI, e-commerce, logistics, consumer tech, and life sciences to build brands that shape the future.</p>
           </div>
 
           <div>
