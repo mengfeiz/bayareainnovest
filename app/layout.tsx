@@ -8,7 +8,6 @@ export const metadata = {
   title: "Bay Area Innovest - Empowering AI Founders",
   description:
     "Bay Area Innovest is a venture capital fund focused on empowering AI founders and startups in the Bay Area.",
-    generator: 'v0.dev'
 }
 
 export default function RootLayout({

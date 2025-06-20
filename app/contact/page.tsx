@@ -64,7 +64,7 @@ export default function ContactPage() {
                   </SelectTrigger>
                   <SelectContent>
                     <SelectItem value="pitch">Pitch a Startup</SelectItem>
-                    <SelectItem value="join">Join as a Innovest</SelectItem>
+                    <SelectItem value="join">Join as a Fellow</SelectItem>
                     <SelectItem value="partnership">Partnership Opportunity</SelectItem>
                     <SelectItem value="press">Press Inquiry</SelectItem>
                     <SelectItem value="other">Other</SelectItem>
@@ -106,9 +106,9 @@ export default function ContactPage() {
                 <h3 className="text-xl font-semibold mb-4">Visit Us</h3>
                 <p className="text-gray-600 mb-4">Our office is located in the heart of San Francisco.</p>
                 <p className="text-[#20b2bd]">
-                  Close to Stanford University
+                  123 Innovation Street
                   <br />
-                  San Jose, CA
+                  San Francisco, CA 94105
                 </p>
               </div>
 
@@ -125,6 +125,24 @@ export default function ContactPage() {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Join Community */}
+      <section className="py-16 bg-gradient-to-r from-[#1f90bf] to-[#5ccdb8] text-white">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-3xl font-bold mb-6">Join Our Community</h2>
+          <p className="text-xl max-w-2xl mx-auto mb-8">
+            Connect with fellow AI enthusiasts, founders, and investors in our growing community.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button asChild size="lg" className="bg-white text-[#20b2bd] hover:bg-white/90">
+              <a href="#">Join AI Club</a>
+            </Button>
+            <Button asChild variant="outline" size="lg" className="border-white text-white hover:bg-white/10">
+              <a href="#">LP Portal</a>
+            </Button>
           </div>
         </div>
       </section>

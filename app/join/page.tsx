@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import Image from "next/image"
@@ -94,7 +93,7 @@ export default function JoinPage() {
 
         {/* Fellows Card */}
         <div className="absolute top-1/4 right-8 md:right-12 lg:right-24 bg-white rounded-lg p-6 shadow-lg max-w-xs">
-          <h3 className="text-lg font-semibold mb-4">Our Innovests</h3>
+          <h3 className="text-lg font-semibold mb-4">Our Fellows</h3>
 
           <div className="space-y-4">
             <div className="flex items-center gap-3">

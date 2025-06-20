@@ -12,32 +12,32 @@ export function SiteFooter() {
               <div className="w-10 h-10 mr-2 bg-gradient-to-r from-[#1f90bf] to-[#5ccdb8] rounded-md flex items-center justify-center">
                 <span className="text-white font-bold text-xs">BAI</span>
               </div>
-              <span className="text-xl font-bold">Bay Area Innovest</span>
+              <span className="text-xl font-bold">Bay Area International Group</span>
             </Link>
-            <p className="mt-4 text-gray-400">Empowering Bay Area Talents since 2021.</p>
+            <p className="mt-4 text-gray-400">Bridging Innovation, Investment, and Global Commerce since 2021.</p>
           </div>
 
           <div>
-            <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
+            <h3 className="text-lg font-semibold mb-4">Our Divisions</h3>
             <ul className="space-y-2">
+              <li>
+                <Link href="/innovest" className="text-gray-400 hover:text-white transition-colors">
+                  Bay Area Innovest
+                </Link>
+              </li>
+              <li>
+                <Link href="/globai" className="text-gray-400 hover:text-white transition-colors">
+                  GloBAI
+                </Link>
+              </li>
+              <li>
+                <Link href="/ecommerce" className="text-gray-400 hover:text-white transition-colors">
+                  Premium E-commerce
+                </Link>
+              </li>
               <li>
                 <Link href="/about" className="text-gray-400 hover:text-white transition-colors">
                   About Us
-                </Link>
-              </li>
-              <li>
-                <Link href="/portfolio" className="text-gray-400 hover:text-white transition-colors">
-                  Portfolio
-                </Link>
-              </li>
-              <li>
-                <Link href="/fellows" className="text-gray-400 hover:text-white transition-colors">
-                  Fellows
-                </Link>
-              </li>
-              <li>
-                <Link href="/blog" className="text-gray-400 hover:text-white transition-colors">
-                  Blog
                 </Link>
               </li>
             </ul>
@@ -46,10 +46,10 @@ export function SiteFooter() {
           <div>
             <h3 className="text-lg font-semibold mb-4">Contact</h3>
             <ul className="space-y-2">
-              <li className="text-gray-400">San Jose, CA</li>
+              <li className="text-gray-400">San Francisco, CA</li>
               <li>
-                <a href="mailto:info@bayareainnovest.com" className="text-gray-400 hover:text-white transition-colors">
-                  info@bayareainnovest.com
+                <a href="mailto:info@bayareaintl.com" className="text-gray-400 hover:text-white transition-colors">
+                  info@bayareaintl.com
                 </a>
               </li>
               <li>
@@ -62,7 +62,7 @@ export function SiteFooter() {
 
           <div>
             <h3 className="text-lg font-semibold mb-4">Newsletter</h3>
-            <p className="text-gray-400 mb-4">Stay updated with our latest news and events.</p>
+            <p className="text-gray-400 mb-4">Stay updated with our latest news and opportunities.</p>
             <div className="flex gap-2">
               <Input type="email" placeholder="Your email" className="bg-gray-800 border-gray-700 text-white" />
               <Button className="bg-[#20b2bd] hover:bg-[#1f90bf]">Subscribe</Button>
@@ -71,7 +71,7 @@ export function SiteFooter() {
         </div>
 
         <div className="mt-12 pt-8 border-t border-gray-800 text-center text-gray-400">
-          <p>© {new Date().getFullYear()} Bay Area Innovest. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Bay Area International Group. All rights reserved.</p>
         </div>
       </div>
     </footer>
