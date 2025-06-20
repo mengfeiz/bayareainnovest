@@ -1,6 +1,18 @@
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
-import { Globe, Truck, ShoppingBag, BarChart, FileCheck, Package, Award, Palette } from "lucide-react"
+import {
+  Globe,
+  Truck,
+  ShoppingBag,
+  BarChart,
+  FileCheck,
+  Package,
+  Award,
+  Palette,
+  TrendingUp,
+  Target,
+  DollarSign,
+} from "lucide-react"
 
 export default function GloBAIPage() {
   return (
@@ -128,88 +140,236 @@ export default function GloBAIPage() {
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">Success Cases</h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-gray-50 p-6 rounded-lg shadow-sm">
-              <div className="mb-4 h-12 w-12 bg-gradient-to-r from-[#1f90bf] to-[#5ccdb8] rounded-md flex items-center justify-center">
-                <span className="text-white font-bold">01</span>
+          <div className="space-y-12">
+            {/* Success Story 1 */}
+            <div className="bg-gradient-to-br from-gray-50 to-white rounded-2xl p-8 shadow-lg border border-gray-100">
+              <div className="flex items-start justify-between mb-6">
+                <div className="flex items-center">
+                  <div className="w-12 h-12 bg-gradient-to-r from-[#1f90bf] to-[#5ccdb8] rounded-xl flex items-center justify-center mr-4">
+                    <span className="text-white font-bold text-lg">01</span>
+                  </div>
+                  <div>
+                    <h3 className="text-2xl font-bold text-gray-900">U.S. Brand with Chinese Manufacturing Partner</h3>
+                    <p className="text-[#20b2bd] font-semibold">Kitchenware & Home Goods</p>
+                  </div>
+                </div>
               </div>
-              <h3 className="text-xl font-semibold mb-2">TechGear China → North America</h3>
-              <p className="text-gray-600 mb-4">
-                Expanded from a local electronics brand to achieving $10M in annual sales across North American markets
-                within 18 months through our omnichannel strategy and logistics network.
-              </p>
-              <div className="text-sm text-gray-500">
-                <strong>Results:</strong> 500% revenue growth, 15 retail partnerships
+
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div className="space-y-6">
+                  <div>
+                    <h4 className="font-semibold text-gray-900 mb-2 flex items-center">
+                      <Target className="h-4 w-4 mr-2 text-[#20b2bd]" />
+                      Challenge
+                    </h4>
+                    <p className="text-gray-700">
+                      A U.S.-based e-commerce brand working with a Chinese OEM factory had high return rates on Amazon
+                      and no off-Amazon marketing, limiting sales and increasing costs.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h4 className="font-semibold text-gray-900 mb-2 flex items-center">
+                      <BarChart className="h-4 w-4 mr-2 text-[#20b2bd]" />
+                      Our Process
+                    </h4>
+                    <p className="text-gray-700">
+                      Starting in 2018 with one kitchenware store, we expanded to manage their home goods store by 2020.
+                      Our dedicated account manager conducted in-depth buyer research with daily team reviews, involving
+                      product managers and operations leads. We coordinated with the factory to refine product design
+                      and quality.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h4 className="font-semibold text-gray-900 mb-2 flex items-center">
+                      <TrendingUp className="h-4 w-4 mr-2 text-[#20b2bd]" />
+                      Improvements
+                    </h4>
+                    <p className="text-gray-700">
+                      Return rates dropped significantly, cash flow stabilized, and product costs were reduced. We
+                      introduced 40+ Amazon promotions, 20+ PPC ad strategies, plus Google Ads and social media
+                      marketing.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
+                  <h4 className="font-semibold text-gray-900 mb-4 flex items-center">
+                    <DollarSign className="h-4 w-4 mr-2 text-[#20b2bd]" />
+                    Results Achieved
+                  </h4>
+                  <div className="space-y-4">
+                    <div className="flex justify-between items-center p-3 bg-gradient-to-r from-[#1f90bf]/10 to-[#5ccdb8]/10 rounded-lg">
+                      <span className="text-gray-700">Annual Revenue (2024)</span>
+                      <span className="font-bold text-2xl text-[#1f90bf]">$100M+</span>
+                    </div>
+                    <div className="flex justify-between items-center p-3 bg-gradient-to-r from-[#20b2bd]/10 to-[#5ccdb8]/10 rounded-lg">
+                      <span className="text-gray-700">ACOS</span>
+                      <span className="font-bold text-xl text-[#20b2bd]">10.47%</span>
+                    </div>
+                    <div className="flex justify-between items-center p-3 bg-gradient-to-r from-[#5ccdb8]/10 to-[#1f90bf]/10 rounded-lg">
+                      <span className="text-gray-700">TACOS</span>
+                      <span className="font-bold text-xl text-[#5ccdb8]">~3%</span>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
 
-            <div className="bg-gray-50 p-6 rounded-lg shadow-sm">
-              <div className="mb-4 h-12 w-12 bg-gradient-to-r from-[#1f90bf] to-[#5ccdb8] rounded-md flex items-center justify-center">
-                <span className="text-white font-bold">02</span>
+            {/* Success Story 2 */}
+            <div className="bg-gradient-to-br from-gray-50 to-white rounded-2xl p-8 shadow-lg border border-gray-100">
+              <div className="flex items-start justify-between mb-6">
+                <div className="flex items-center">
+                  <div className="w-12 h-12 bg-gradient-to-r from-[#20b2bd] to-[#5ccdb8] rounded-xl flex items-center justify-center mr-4">
+                    <span className="text-white font-bold text-lg">02</span>
+                  </div>
+                  <div>
+                    <h3 className="text-2xl font-bold text-gray-900">Shenzhen Electronics Manufacturer</h3>
+                    <p className="text-[#20b2bd] font-semibold">Consumer Electronics</p>
+                  </div>
+                </div>
               </div>
-              <h3 className="text-xl font-semibold mb-2">HomeStyle → European Markets</h3>
-              <p className="text-gray-600 mb-4">
-                Home decor brand that leveraged our complete rebranding and omnichannel strategy to establish presence
-                in 5 European countries with 200% YoY growth.
-              </p>
-              <div className="text-sm text-gray-500">
-                <strong>Results:</strong> 200% YoY growth, 5 country expansion
+
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div className="space-y-6">
+                  <div>
+                    <h4 className="font-semibold text-gray-900 mb-2 flex items-center">
+                      <Target className="h-4 w-4 mr-2 text-[#20b2bd]" />
+                      Challenge
+                    </h4>
+                    <p className="text-gray-700">
+                      When we took over in 2021, this Shenzhen-based factory's Amazon store had $25M in sales but a poor
+                      payout rate of just 21%, due to intense product and advertising competition.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h4 className="font-semibold text-gray-900 mb-2 flex items-center">
+                      <BarChart className="h-4 w-4 mr-2 text-[#20b2bd]" />
+                      Our Process
+                    </h4>
+                    <p className="text-gray-700">
+                      We conducted international market research and identified that their product was well-suited for
+                      B2B. We supported their entry into Amazon Business and optimized pricing and marketing strategies
+                      accordingly.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h4 className="font-semibold text-gray-900 mb-2 flex items-center">
+                      <TrendingUp className="h-4 w-4 mr-2 text-[#20b2bd]" />
+                      Improvements
+                    </h4>
+                    <p className="text-gray-700">
+                      Although the to-C payout only slightly improved in the first year (to 25%), the client renewed the
+                      partnership for two more years, trusting our strategic direction and long-term vision.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
+                  <h4 className="font-semibold text-gray-900 mb-4 flex items-center">
+                    <DollarSign className="h-4 w-4 mr-2 text-[#20b2bd]" />
+                    Results Achieved
+                  </h4>
+                  <div className="space-y-4">
+                    <div className="flex justify-between items-center p-3 bg-gradient-to-r from-[#20b2bd]/10 to-[#5ccdb8]/10 rounded-lg">
+                      <span className="text-gray-700">2024 Sales</span>
+                      <span className="font-bold text-2xl text-[#20b2bd]">$72.8M</span>
+                    </div>
+                    <div className="flex justify-between items-center p-3 bg-gradient-to-r from-[#5ccdb8]/10 to-[#1f90bf]/10 rounded-lg">
+                      <span className="text-gray-700">Payout Rate</span>
+                      <span className="font-bold text-xl text-[#5ccdb8]">34%</span>
+                    </div>
+                    <div className="p-3 bg-gradient-to-r from-[#1f90bf]/10 to-[#20b2bd]/10 rounded-lg">
+                      <span className="text-gray-700 text-sm">
+                        Achieved steady growth while peers saw significant declines
+                      </span>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
 
-            <div className="bg-gray-50 p-6 rounded-lg shadow-sm">
-              <div className="mb-4 h-12 w-12 bg-gradient-to-r from-[#1f90bf] to-[#5ccdb8] rounded-md flex items-center justify-center">
-                <span className="text-white font-bold">03</span>
+            {/* Success Story 3 */}
+            <div className="bg-gradient-to-br from-gray-50 to-white rounded-2xl p-8 shadow-lg border border-gray-100">
+              <div className="flex items-start justify-between mb-6">
+                <div className="flex items-center">
+                  <div className="w-12 h-12 bg-gradient-to-r from-[#5ccdb8] to-[#1f90bf] rounded-xl flex items-center justify-center mr-4">
+                    <span className="text-white font-bold text-lg">03</span>
+                  </div>
+                  <div>
+                    <h3 className="text-2xl font-bold text-gray-900">
+                      Domestic Factory New to Cross-Border E-commerce
+                    </h3>
+                    <p className="text-[#20b2bd] font-semibold">New Seller Enablement</p>
+                  </div>
+                </div>
               </div>
-              <h3 className="text-xl font-semibold mb-2">BeautyLux → Premium Global</h3>
-              <p className="text-gray-600 mb-4">
-                Luxury cosmetics brand transformed through our brand empowerment program, achieving premium positioning
-                in high-end department stores across 3 continents.
-              </p>
-              <div className="text-sm text-gray-500">
-                <strong>Results:</strong> Premium positioning, 50+ luxury retailers
-              </div>
-            </div>
 
-            <div className="bg-gray-50 p-6 rounded-lg shadow-sm">
-              <div className="mb-4 h-12 w-12 bg-gradient-to-r from-[#1f90bf] to-[#5ccdb8] rounded-md flex items-center justify-center">
-                <span className="text-white font-bold">04</span>
-              </div>
-              <h3 className="text-xl font-semibold mb-2">FashionForward → Omnichannel Success</h3>
-              <p className="text-gray-600 mb-4">
-                Fashion brand that utilized our complete ecosystem from supply chain to last-mile delivery, achieving
-                seamless integration across Amazon, TikTok Shop, and physical retail.
-              </p>
-              <div className="text-sm text-gray-500">
-                <strong>Results:</strong> Multi-platform success, 300% online growth
-              </div>
-            </div>
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div className="space-y-6">
+                  <div>
+                    <h4 className="font-semibold text-gray-900 mb-2 flex items-center">
+                      <Target className="h-4 w-4 mr-2 text-[#20b2bd]" />
+                      Challenge
+                    </h4>
+                    <p className="text-gray-700">
+                      A traditional domestic manufacturer with no previous experience in cross-border e-commerce lacked
+                      expertise in store setup, compliance, and marketing, facing uncertainty in launching an
+                      international e-commerce presence.
+                    </p>
+                  </div>
 
-            <div className="bg-gray-50 p-6 rounded-lg shadow-sm">
-              <div className="mb-4 h-12 w-12 bg-gradient-to-r from-[#1f90bf] to-[#5ccdb8] rounded-md flex items-center justify-center">
-                <span className="text-white font-bold">05</span>
-              </div>
-              <h3 className="text-xl font-semibold mb-2">HealthTech Innovations → Global Expansion</h3>
-              <p className="text-gray-600 mb-4">
-                Health and wellness brand that leveraged our regulatory expertise and brand design services to enter
-                highly regulated markets in US, EU, and Japan simultaneously.
-              </p>
-              <div className="text-sm text-gray-500">
-                <strong>Results:</strong> 3 market entry, regulatory compliance
-              </div>
-            </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900 mb-2 flex items-center">
+                      <BarChart className="h-4 w-4 mr-2 text-[#20b2bd]" />
+                      Our Process
+                    </h4>
+                    <p className="text-gray-700">
+                      We guided the client through account and trademark registration, product selection, inventory
+                      planning, and logistics setup. Our team provided ongoing sales reports and performance reviews to
+                      refine strategy in real time.
+                    </p>
+                  </div>
 
-            <div className="bg-gray-50 p-6 rounded-lg shadow-sm">
-              <div className="mb-4 h-12 w-12 bg-gradient-to-r from-[#1f90bf] to-[#5ccdb8] rounded-md flex items-center justify-center">
-                <span className="text-white font-bold">06</span>
-              </div>
-              <h3 className="text-xl font-semibold mb-2">SmartLiving → IoT Global Launch</h3>
-              <p className="text-gray-600 mb-4">
-                Smart home device manufacturer that used our end-to-end platform to launch simultaneously in 8
-                countries, with localized marketing and streamlined logistics.
-              </p>
-              <div className="text-sm text-gray-500">
-                <strong>Results:</strong> 8 country launch, 150% first-year growth
+                  <div>
+                    <h4 className="font-semibold text-gray-900 mb-2 flex items-center">
+                      <TrendingUp className="h-4 w-4 mr-2 text-[#20b2bd]" />
+                      Improvements
+                    </h4>
+                    <p className="text-gray-700">
+                      We quickly helped the store build up reviews and organic traffic. Our PPC specialists ensured ad
+                      budgets were spent efficiently, supporting both short-term conversion and long-term brand
+                      building.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
+                  <h4 className="font-semibold text-gray-900 mb-4 flex items-center">
+                    <DollarSign className="h-4 w-4 mr-2 text-[#20b2bd]" />
+                    Results Achieved
+                  </h4>
+                  <div className="space-y-4">
+                    <div className="flex justify-between items-center p-3 bg-gradient-to-r from-[#5ccdb8]/10 to-[#1f90bf]/10 rounded-lg">
+                      <span className="text-gray-700">2024 Sales</span>
+                      <span className="font-bold text-2xl text-[#5ccdb8]">$87.7M</span>
+                    </div>
+                    <div className="flex justify-between items-center p-3 bg-gradient-to-r from-[#1f90bf]/10 to-[#20b2bd]/10 rounded-lg">
+                      <span className="text-gray-700">ACOS</span>
+                      <span className="font-bold text-xl text-[#1f90bf]">17.53%</span>
+                    </div>
+                    <div className="flex justify-between items-center p-3 bg-gradient-to-r from-[#20b2bd]/10 to-[#5ccdb8]/10 rounded-lg">
+                      <span className="text-gray-700">TACOS</span>
+                      <span className="font-bold text-xl text-[#20b2bd]">3%</span>
+                    </div>
+                    <div className="p-3 bg-gradient-to-r from-[#5ccdb8]/10 to-[#1f90bf]/10 rounded-lg">
+                      <span className="text-gray-700 text-sm">Achieved sustainable and scalable advertising model</span>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
