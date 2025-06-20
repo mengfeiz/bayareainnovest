@@ -21,7 +21,7 @@ export default function GloBAIPage() {
       <section className="relative px-4 py-20 bg-gradient-to-r from-[#1f90bf] via-[#20b2bd] to-[#5ccdb8] text-white">
         <div className="container mx-auto">
           <h1 className="text-4xl font-bold mb-6">GloBAI Go Global Service</h1>
-          <p className="text-xl max-w-3xl">One-Stop Cross-Border Growth Platform for Chinese Brands</p>
+          <p className="text-xl max-w-3xl">One-stop brand go-global service platform.</p>
         </div>
       </section>
 
