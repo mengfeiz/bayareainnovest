@@ -1,6 +1,7 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, TrendingUp, Globe, ShoppingBag, MapPin } from "lucide-react"
+import Image from "next/image"
 
 export default function Home() {
   return (
@@ -11,6 +12,17 @@ export default function Home() {
         <div className="absolute pointer-events-none inset-0 flex items-center justify-center [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
 
         <div className="container relative z-10 mx-auto text-center">
+          {/* Logo in Hero */}
+          <div className="flex justify-center mb-8">
+            <Image
+              src="/bai-logo.png"
+              alt="Bay Area International Group"
+              width={120}
+              height={120}
+              className="brightness-0 invert"
+            />
+          </div>
+
           <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl md:text-7xl lg:text-8xl">
             Bay Area Innovest
           </h1>
@@ -54,7 +66,12 @@ export default function Home() {
                 Get Started <ArrowRight className="w-4 h-4 ml-2" />
               </Link>
             </Button>
-            <Button asChild variant="outline" size="lg" className="border-white text-[#20b2bd] hover:bg-white/10">
+            <Button
+              asChild
+              variant="outline"
+              size="lg"
+              className="border-white text-white hover:bg-white/10 bg-transparent"
+            >
               <Link href="/about">Learn More</Link>
             </Button>
           </div>
@@ -82,7 +99,7 @@ export default function Home() {
                   <li>• AI & Tech Incubation</li>
                   <li>• Full-Lifecycle Support</li>
                 </ul>
-                <Button asChild variant="outline" className="border-white text-[#20b2bd] hover:bg-white/10">
+                <Button asChild variant="outline" className="border-white text-white hover:bg-white/10 bg-transparent">
                   <Link href="/innovest">Explore Fund</Link>
                 </Button>
               </div>
@@ -126,7 +143,7 @@ export default function Home() {
                   <li>• Personalized Shopping</li>
                   <li>• Exclusive Collections</li>
                 </ul>
-                <Button asChild variant="outline" className="border-white text-[#20b2bd] hover:bg-white/10">
+                <Button asChild variant="outline" className="border-white text-white hover:bg-white/10 bg-transparent">
                   <Link href="/ecommerce">Shop Premium</Link>
                 </Button>
               </div>
@@ -135,8 +152,8 @@ export default function Home() {
         </div>
       </section>
 
-    {/* Industry Advantages */}
-    <section className="py-20 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
+      {/* Industry Advantages */}
+      <section className="py-20 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
         {/* Background Pattern */}
         <div className="absolute inset-0 opacity-5">
           <div className="absolute top-10 left-10 w-32 h-32 bg-[#20b2bd] rounded-full blur-3xl"></div>
@@ -443,7 +460,12 @@ export default function Home() {
             <Button asChild size="lg" className="bg-white text-[#20b2bd] hover:bg-white/90">
               <Link href="/contact">Get Started Today</Link>
             </Button>
-            <Button asChild variant="outline" size="lg" className="border-white text-[#20b2bd] hover:bg-white/10">
+            <Button
+              asChild
+              variant="outline"
+              size="lg"
+              className="border-white text-white hover:bg-white/10 bg-transparent"
+            >
               <Link href="/about">Learn More About Us</Link>
             </Button>
           </div>

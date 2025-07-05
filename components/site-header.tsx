@@ -1,6 +1,7 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { MobileNav } from "./mobile-nav"
+import Image from "next/image"
 
 export function SiteHeader() {
   return (
@@ -8,9 +9,7 @@ export function SiteHeader() {
       <div className="container flex items-center justify-between h-16 px-4 mx-auto">
         <div className="flex items-center gap-2">
           <Link href="/" className="flex items-center">
-            <div className="w-8 h-8 mr-2 bg-gradient-to-r from-[#1f90bf] to-[#5ccdb8] rounded-md flex items-center justify-center">
-              <span className="text-white font-bold text-xs">BAI</span>
-            </div>
+            <Image src="/bai-logo.png" alt="Bay Area Innovest" width={40} height={40} className="mr-3" />
             <span className="text-xl font-bold">Bay Area Innovest</span>
           </Link>
         </div>

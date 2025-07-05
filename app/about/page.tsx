@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
+import Image from "next/image"
 
 export default function AboutPage() {
   return (
@@ -7,10 +8,20 @@ export default function AboutPage() {
       {/* Hero Section */}
       <section className="relative px-4 py-20 bg-gradient-to-r from-[#1f90bf] to-[#5ccdb8] text-white">
         <div className="container mx-auto">
+        <div className="flex flex-col items-center text-center">
+            <Image
+              src="/bai-logo.png"
+              alt="Bay Area International Group"
+              width={80}
+              height={80}
+              className="mb-6 brightness-0 invert"
+            />
           <h1 className="text-4xl font-bold mb-6">Our Story</h1>
           <p className="text-xl max-w-3xl">
-            BAI connects global Bay Area innovation and cross-border resources to empower tech innovation and brands to go global.
-          </p>
+          BAI connects global Bay Area innovation and cross-border resources to empower tech innovation and brands
+              to go global.
+            </p>
+          </div>
         </div>
       </section>
 

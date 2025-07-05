@@ -1,6 +1,7 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
+import Image from "next/image"
 
 export function SiteFooter() {
   return (
@@ -9,9 +10,13 @@ export function SiteFooter() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="md:col-span-1">
             <Link href="/" className="flex items-center">
-              <div className="w-10 h-10 mr-2 bg-gradient-to-r from-[#1f90bf] to-[#5ccdb8] rounded-md flex items-center justify-center">
-                <span className="text-white font-bold text-xs">BAI</span>
-              </div>
+              <Image
+                src="/bai-logo.png"
+                alt="Bay Area International Group"
+                width={50}
+                height={50}
+                className="mr-3 brightness-0 invert"
+              />
               <span className="text-xl font-bold">Bay Area Innovest</span>
             </Link>
             <p className="mt-4 text-gray-400">Global catalyst for next-gen innovation, empowering visionary founders in AI, e-commerce, logistics, consumer tech, and life sciences to build brands that shape the future.</p>
